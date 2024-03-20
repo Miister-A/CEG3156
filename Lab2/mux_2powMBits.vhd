@@ -10,7 +10,7 @@ port(
 	outp : out std_logic);
 end mux_2powMBits;
 
-architecture rtl of mux_2powMBits is
+architecture structural of mux_2powMBits is
 
 -- conmponents
 --none
@@ -28,4 +28,4 @@ begin
 			port map (
 				en_mask(i), inp(i), outp);
 	end generate;
-end rtl;
+end structural;

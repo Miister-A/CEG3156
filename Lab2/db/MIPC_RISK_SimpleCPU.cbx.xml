@@ -1,5 +1,8 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="MIPC_RISK_SimpleCPU">
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|DMEM_wizard:inst13|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ciq3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|LPM_CONSTANT:inst21" CBX_FILE_NAME="lpm_constant_4j4.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|LPM_ROM:IMEM|altrom:srom|altsyncram:rom_block" CBX_FILE_NAME="altsyncram_rnv.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
