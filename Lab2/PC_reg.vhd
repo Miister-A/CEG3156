@@ -1,0 +1,28 @@
+--- MIPS Single Cycle Processor
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+use ieee.numeric_std.all;
+use work.MIPS_RISK_SingleCycle_VARS.all;
+
+entity PC_reg is
+	port(
+		clk, global_reset : in std_logic;
+		PC_next : in std_logic_vector(isz-1 downto 0);
+		PC : out std_logic_vector(isz-1 downto 0));
+end PC_reg;
+
+
+architecture structural of PC_reg is
+
+begin
+
+	-- patterned after:
+	-- uOttawa CEG 3156 - slideset BML4 - slide 23
+	-- https://uottawa.brightspace.com/d2l/le/content/417607/viewContent/5836345/View
+
+	PC_reg : entity work.nBit_reg(structural)
+		generic map(isz)
+		port map(PC_next, 	clk, '1', global_reset, PC, open);
+			-- parallel_in, clk, preset, clear, q, q_not
+end structural;

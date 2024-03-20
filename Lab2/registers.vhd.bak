@@ -1,0 +1,12 @@
+
+entity Registers is
+	generic ( isz : positive := 4 );
+	generic ( dasz : positive := 4 );
+	port(
+		reg1_adr, reg2_adr, write_adr : in std_logic_vector(dasz-1 downto 0);
+		outp : out std_logic_vector(isz-1 downto 0));
+end Registers;
+
+architecture rtl of Registers is
+
+end rtl;

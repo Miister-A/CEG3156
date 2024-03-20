@@ -1,0 +1,25 @@
+
+WIDTH=32;
+DEPTH=128;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	0    :   11111111;
+	1    :   22222222;
+	2    :   33333333;
+	3    :   44444444;
+	4    :   55555555;
+	5    :   66666666;
+	6    :   77777777;
+	7    :   88888888;
+	8    :   99999999;
+	9    :   AAAAAAAA;
+	10   :   BBBBBBBB;
+	11   :   CCCCCCCC;
+	12   :   DDDDDDDD;
+	13   :   EEEEEEEE;
+	14   :   FFFFFFFF;
+	[15..255]  :   00000000;
+END;

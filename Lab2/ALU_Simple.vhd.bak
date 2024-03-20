@@ -1,0 +1,24 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+use ieee.std_logic_misc.all;
+
+
+entity ALU_Simple is
+	generic(
+		dsz : positive := 32;
+	port(
+		A, B : in std_logic_vector(dsz-1 downto 0);
+		op_sel : in std_logic_vector(2 downto 0);
+		result : out std_logic_vector(dsz-1 downto 0);
+		zero : out std_logic_);
+end ALU_Simple;
+
+architecture structural of ALU_Simple is
+
+-- wires
+
+begin
+	
+end structural;
+
+

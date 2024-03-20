@@ -1,0 +1,25 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+
+entity MIPS_RISK_SingleCycle_instruction_breakdown is
+port(
+	instruction : in std_logic_vector(31 downto 0);
+	instruction_type : out std_logic_vector(itsz-1 downto 0);
+	REG1_adr, REG2_adr, REG_write_adr, REG_write_adr_t : out std_logic_vector(dasz-1 downto 0);
+	ALU_shamt : out std_logic_vector(10 downto 6);
+	address : out std_logic_vector(asz-1 downto 0));
+end MIPS_RISK_SingleCycle_instruction_breakdown;
+
+architecture rtl of MIPS_RISK_SingleCycle_instruction_breakdown is
+
+
+begin
+	instruction_type <= instruction(31 downto 26);
+	REG1_adr <= instruction(25 downto 21);
+	REG2_adr <= instruction(20 downto 16);
+	REG_write_adr_t <= instruction(15 downto 11);
+	ALU_shamt <= instruction(10 downto 6);
+	ALU_op <= instruction(5 downto 0);
+	address <= instruction(15 downto 0);
+end rtl;

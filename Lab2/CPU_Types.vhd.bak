@@ -1,0 +1,6 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+package Custom_Types is
+    type std_logic_vector_array is array (natural range <>) of std_logic_vector;
+end package Custom_Types;

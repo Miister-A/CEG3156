@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Wring\Documents\_uOttawa\2024Winter\CEG3156\Lab2\QII\simulation\qsim
+vtop_level
+Z1 !s100 ^3d1I=Pdjk]KH]UEJUB6H0
+Z2 I:3O>cO1mkTW3BU:9YMSPK1
+Z3 VP38?6WzgMV`?ZKCfIgmd]0
+Z4 dC:\Users\Wring\Documents\_uOttawa\2024Winter\CEG3156\Labs\Lab2\simulation\qsim
+Z5 w1710353615
+Z6 8MIPC_RISK_SimpleCPU.vo
+Z7 FMIPC_RISK_SimpleCPU.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|MIPC_RISK_SimpleCPU.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1710353615.560000
+Z12 !s107 MIPC_RISK_SimpleCPU.vo|
+!s101 -O0
+vtop_level_vlg_check_tst
+!i10b 1
+Z13 !s100 Afl6odJBl<W3SGMD21HL23
+Z14 Ib??<AC`QSjOKc4`0o6@DT0
+Z15 VAnzP_nIobO<[k9`ckiE;83
+R4
+Z16 w1710353614
+Z17 8component_test.vwf.vt
+Z18 Fcomponent_test.vwf.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z19 !s108 1710353615.616000
+Z20 !s107 component_test.vwf.vt|
+Z21 !s90 -work|work|component_test.vwf.vt|
+!s101 -O0
+R10
+vtop_level_vlg_sample_tst
+!i10b 1
+Z22 !s100 _o_OKa>GI>S8geA36B[F73
+Z23 IUT==HDoU;>?3WNcc7=6Aa1
+Z24 VFOQiJoH6mH5=Fj<NUXKXA2
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vtop_level_vlg_vec_tst
+!i10b 1
+!s100 z@XIYd?8ID_[ggbZ7>W9f2
+I9n@jf91C1f_Z7EFdn?V]80
+Z25 V=nL=_2N5S:^=<U4>RnULe1
+R4
+R16
+R17
+R18
+Z26 L0 1301
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

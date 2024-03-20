@@ -1,0 +1,26 @@
+-- n-bit adder subtraction block
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+entity nBit_adder_subtraction_block is
+generic ( n : positive := 4 );
+port(
+	b_in : in std_logic_vector(n-1 downto 0);
+	is_subtract : in std_logic;
+	b_out : out std_logic_vector(n-1 downto 0);
+	c_out: out std_logic);
+end nBit_adder_subtraction_block;
+
+architecture structural of nBit_adder_subtraction_block is
+
+signal is_subtract_mask: std_logic_vector(n-1 downto 0);
+
+begin
+	c_out <= is_subtract;
+	is_subtract_mask <= (others => is_subtract);
+	b_out <= (is_subtract_mask and not b_in) or (not is_subtract_mask and b_in);
+
+end structural;
+
+

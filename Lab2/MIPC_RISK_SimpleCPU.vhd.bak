@@ -1,0 +1,24 @@
+--- MIPS Single Cycle Processor
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+
+entity MIPS_RISK_SingleCycle is
+port(
+	clk, global_reset : in std_logic);
+end MIPS_RISK_SingleCycle;
+
+architecture rtl of MIPS_RISK_SingleCycle is
+
+-- conmponents
+
+-- DataMemp
+-- 
+
+-- wires
+--none
+
+begin
+	
+end rtl;
